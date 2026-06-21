@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+/* Main styling modifications */
+html, body, [class*="css"] {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Background gradient for the main app container */
+.stApp {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+    color: #f1f5f9;
+}
+
+/* Sidebar styling */
+section[data-testid="stSidebar"] {
+    background-color: rgba(15, 23, 42, 0.9) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Login container styling */
+.login-container {
+    background: rgba(30, 41, 59, 0.7);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(8px);
+    max-width: 450px;
+    margin: 5% auto;
+    text-align: center;
+}
+
+/* Headers with beautiful color gradients */
+.gradient-text {
+    background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.gradient-subtext {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Custom styled dashboard cards */
+.metric-card {
+    background: rgba(30, 41, 59, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    backdrop-filter: blur(4px);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(129, 140, 248, 0.5);
+    box-shadow: 0 8px 30px rgba(129, 140, 248, 0.15);
+}
+
+.metric-title {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.metric-value {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-top: 0.25rem;
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.metric-accent-blue {
+    border-left: 4px solid #38bdf8;
+}
+
+.metric-accent-purple {
+    border-left: 4px solid #818cf8;
+}
+
+.metric-accent-pink {
+    border-left: 4px solid #f472b6;
+}
+
+/* Styled table headers and data */
+.custom-table-container {
+    background: rgba(30, 41, 59, 0.45);
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 1.5rem;
+}
+
+/* Custom button styles */
+div.stButton > button:first-child {
+    background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 2rem;
+    transition: all 0.3s ease;
+}
+
+div.stButton > button:first-child:hover {
+    background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%);
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.4);
+    transform: scale(1.02);
+}
+
+/* Logout button specific styling inside sidebar */
+div.sidebar-logout-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 80%;
+}
+
+/* --- Force White Text Visibility Overrides --- */
+/* Global elements */
+body, .stApp, .stMarkdown, p, span, label, li {
+    color: #f8fafc !important;
+}
+
+/* Sidebar texts */
+section[data-testid="stSidebar"] p, 
+section[data-testid="stSidebar"] span, 
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] h2 {
+    color: #ffffff !important;
+}
+
+/* Markdown Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+/* Sub-headings and secondary notes in white */
+.gradient-subtext {
+    color: #cbd5e1 !important;
+}
+
+.metric-title {
+    color: #cbd5e1 !important;
+}
+
+/* Streamlit specific widget labels */
+div[data-testid="stWidgetLabel"] p {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+/* Input boxes & sliders */
+.stTextInput input, .stSelectbox select, .stSlider div {
+    color: #ffffff !important;
+}
+
+/* Interactive Tabs */
+button[data-baseweb="tab"] p {
+    color: #94a3b8 !important; /* Inactive tab */
+}
+button[aria-selected="true"] p {
+    color: #ffffff !important; /* Active tab */
+    font-weight: 700;
+}
+
+/* Alert texts & informational components */
+.stAlert p {
+    color: #1e293b !important; /* Keep alert text dark for visibility inside yellow/red alerts */
+}
