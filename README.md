@@ -1,5 +1,6 @@
 # India-demographics-it-dashboard using Streamlit
 Interactive data visualization explorer for India's demographics, languages, and technology landscape built with Streamlit and Plotly.
+<img width="1912" height="912" alt="image" src="https://github.com/user-attachments/assets/ab8db06f-2144-48e2-bb43-2138e9482be4" />
 
 🇮🇳 **India Insights** is an interactive, modern, and colorful Streamlit web application designed to visualize and analyze India's demographics, spoken languages, and growing IT industry footprint.
 
